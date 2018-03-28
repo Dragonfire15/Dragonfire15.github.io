@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+background-color: #E74C3C;
+color: #FDFEFE;
+}
+</head>
+<body>
+<nav class="w3-bar w3-black">
+  <a href="" class="w3-button w3-bar-item">Home</a>
+  </nav>
+  <h2>Popular Movies</h2>
+  <section>
+  <img class="mySlides" src="avengers-infinity-war-directors-tease-new-trailer-soon.jpg" style="width:100%">
+  <img class="mySlides" src="black-panther-quad-poster.jpg?itok=TsYSOfOw" style="width:100%">
+  <img class="mySlides" src="maxresdefault-2.jpg?w=730&crop=1" style="width:100%">
+</section>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+}
+</script>
+
+</body>
+</html>
